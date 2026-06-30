@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Norrland</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Norrland</a>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container section" style="max-width:600px;">
+    <h1 class="section-title">Contact Us</h1>
+    <p class="section-sub">We'd love to hear from you.</p>
+
+    <form onsubmit="handleContact(event)" style="margin-top:1.5rem;">
+      <div class="form-group">
+        <label for="cname">Name</label>
+        <input id="cname" type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="cemail">Email</label>
+        <input id="cemail" type="email" required>
+      </div>
+      <div class="form-group">
+        <label for="cmessage">Message</label>
+        <textarea id="cmessage" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <div style="margin-top:2.5rem;">
+      <p><strong>Email:</strong> hello@norrland.shop</p>
+      <p><strong>Phone:</strong> (555) 010-2030</p>
+      <p><strong>Address:</strong> 12 Birch Lane, Portland, OR</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="nav__brand">Norrland</p>
+        <p class="footer__copy">© 2026 Norrland. All rights reserved.</p>
+      </div>
+      <nav class="footer__links">
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
