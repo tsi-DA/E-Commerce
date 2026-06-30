@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norrland — Simple Goods</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Norrland</a>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav__links">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero container">
+    <h1>Everyday goods, made simple.</h1>
+    <p>Thoughtfully made essentials, shipped to your door.</p>
+    <a href="products.html" class="btn">Shop Now</a>
+  </section>
+
+  <!-- Featured products -->
+  <section class="container section">
+    <h2 class="section-title">Featured</h2>
+    <p class="section-sub">A few favorites from the shop.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="card__img">Ceramic Mug</div>
+        <div class="card__body">
+          <p class="card__title">Ceramic Mug</p>
+          <p class="card__price">$18.00</p>
+          <button class="card__btn" onclick="addToCart('Ceramic Mug', 18)">Add to Cart</button>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__img">Canvas Tote</div>
+        <div class="card__body">
+          <p class="card__title">Canvas Tote</p>
+          <p class="card__price">$24.00</p>
+          <button class="card__btn" onclick="addToCart('Canvas Tote', 24)">Add to Cart</button>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__img">Wool Throw</div>
+        <div class="card__body">
+          <p class="card__title">Wool Throw</p>
+          <p class="card__price">$58.00</p>
+          <button class="card__btn" onclick="addToCart('Wool Throw', 58)">Add to Cart</button>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__img">Oak Candle</div>
+        <div class="card__body">
+          <p class="card__title">Oak Candle</p>
+          <p class="card__price">$14.00</p>
+          <button class="card__btn" onclick="addToCart('Oak Candle', 14)">Add to Cart</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section section--alt">
+    <div class="container" style="text-align:center; max-width:500px;">
+      <h2 class="section-title">Stay in the loop</h2>
+      <p class="section-sub">New arrivals and offers, once a month.</p>
+      <form onsubmit="handleNewsletter(event)" style="display:flex; gap:0.5rem;">
+        <input type="email" required placeholder="you@example.com" aria-label="Email address" style="flex:1; padding:0.65rem; border:1px solid var(--line); border-radius:4px;">
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="nav__brand">Norrland</p>
+        <p class="footer__copy">© 2026 Norrland. All rights reserved.</p>
+      </div>
+      <nav class="footer__links">
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
