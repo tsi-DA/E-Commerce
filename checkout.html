@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — Norrland</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Norrland</a>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container section" style="max-width:600px;">
+    <h1 class="section-title">Checkout</h1>
+    <p class="section-sub">Enter your details to complete your order.</p>
+
+    <form onsubmit="handleCheckout(event)">
+      <div class="row">
+        <div class="form-group">
+          <label for="fname">First name</label>
+          <input id="fname" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="lname">Last name</label>
+          <input id="lname" type="text" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Shipping address</label>
+        <input id="address" type="text" required>
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <label for="city">City</label>
+          <input id="city" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="zip">ZIP code</label>
+          <input id="zip" type="text" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="payment">Payment method</label>
+        <select id="payment">
+          <option>Credit Card</option>
+          <option>PayPal</option>
+          <option>Cash on Delivery</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn" style="width:100%;">Place Order</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="nav__brand">Norrland</p>
+        <p class="footer__copy">© 2026 Norrland. All rights reserved.</p>
+      </div>
+      <nav class="footer__links">
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
