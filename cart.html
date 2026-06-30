@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart — Norrland</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Norrland</a>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="cart.html" class="active">Cart (<span id="cart-count">0</span>)</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container section" style="max-width:700px;">
+    <h1 class="section-title">Your Cart</h1>
+    <p class="section-sub">Review your items before checkout.</p>
+
+    <div id="cart-list"></div>
+
+    <div class="cart__summary">
+      <span>Total</span>
+      <span id="cart-total">$0.00</span>
+    </div>
+
+    <a href="checkout.html" class="btn" style="display:block; text-align:center; margin-top:1.5rem;">Proceed to Checkout</a>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="nav__brand">Norrland</p>
+        <p class="footer__copy">© 2026 Norrland. All rights reserved.</p>
+      </div>
+      <nav class="footer__links">
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
