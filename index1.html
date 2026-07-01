@@ -1,0 +1,101 @@
+<!-- Featured products -->
+<section class="container section">
+  <h2 class="section-title">Featured</h2>
+  <p class="section-sub">A few favorites from the shop.</p>
+
+  <div class="grid">
+
+    <!-- Product 1 -->
+    <article class="card"
+             data-product-id="P1001"
+             data-product-name="Ceramic Mug"
+             data-category="Kitchenware">
+      <div class="card__img">Ceramic Mug</div>
+      <div class="card__body">
+        <p class="card__title">Ceramic Mug</p>
+        <p class="card__category">Category: Kitchenware</p>
+        <p class="card__price">$18.00</p>
+        <button
+          class="card__btn"
+          onclick="addToCart({
+            id: 'P1001',
+            name: 'Ceramic Mug',
+            category: 'Kitchenware',
+            price: 18
+          })">
+          Add to Cart
+        </button>
+      </div>
+    </article>
+
+    <!-- Product 2 -->
+    <article class="card"
+             data-product-id="P1002"
+             data-product-name="Canvas Tote"
+             data-category="Accessories">
+      <div class="card__img">Canvas Tote</div>
+      <div class="card__body">
+        <p class="card__title">Canvas Tote</p>
+        <p class="card__category">Category: Accessories</p>
+        <p class="card__price">$24.00</p>
+        <button
+          class="card__btn"
+          onclick="addToCart({
+            id: 'P1002',
+            name: 'Canvas Tote',
+            category: 'Accessories',
+            price: 24
+          })">
+          Add to Cart
+        </button>
+      </div>
+    </article>
+
+    <!-- Product 3 -->
+    <article class="card"
+             data-product-id="P1003"
+             data-product-name="Wool Throw"
+             data-category="Home Decor">
+      <div class="card__img">Wool Throw</div>
+      <div class="card__body">
+        <p class="card__title">Wool Throw</p>
+        <p class="card__category">Category: Home Decor</p>
+        <p class="card__price">$58.00</p>
+        <button
+          class="card__btn"
+          onclick="addToCart({
+            id: 'P1003',
+            name: 'Wool Throw',
+            category: 'Home Decor',
+            price: 58
+          })">
+          Add to Cart
+        </button>
+      </div>
+    </article>
+
+    <!-- Product 4 -->
+    <article class="card"
+             data-product-id="P1004"
+             data-product-name="Oak Candle"
+             data-category="Home Fragrance">
+      <div class="card__img">Oak Candle</div>
+      <div class="card__body">
+        <p class="card__title">Oak Candle</p>
+        <p class="card__category">Category: Home Fragrance</p>
+        <p class="card__price">$14.00</p>
+        <button
+          class="card__btn"
+          onclick="addToCart({
+            id: 'P1004',
+            name: 'Oak Candle',
+            category: 'Home Fragrance',
+            price: 14
+          })">
+          Add to Cart
+        </button>
+      </div>
+    </article>
+
+  </div>
+</section>
