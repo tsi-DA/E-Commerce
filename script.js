@@ -40,7 +40,7 @@ function addToCart(product) {
   name: "Ceramic Mug",
    category: "Kitchenware",
    price: 18
-   }
+   
    id: "P1002",
   name: "Canvas tote",
    category: "bags",
