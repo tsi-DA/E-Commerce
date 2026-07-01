@@ -32,6 +32,20 @@ function addToCart(name, price) {
   alert(name + " added to cart");
 }
 
+function addToCart(product) {
+  console.log("Added to cart:", product);
+
+   {
+  id: "P1001",
+  name: "Ceramic Mug",
+   category: "Kitchenware",
+   price: 18
+   }
+   id: "P1002",
+  name: "Canvas tote",
+   category: "bags",
+   price: 13
+}
 function removeFromCart(name) {
   saveCart(getCart().filter((item) => item.name !== name));
   renderCart();
